@@ -6,10 +6,6 @@
 		return
 
 	var/list/migrate_jobs = list(
-		// If my logic is correct, this state should never occur, but just to ensure all states are stable.
-		"Medical Doctor" = JOB_ACOLYTE,
-		// Pre-Aethering-II Doctor.
-		"General Practitioner" = JOB_ACOLYTE
 	)
 	var/list/job_prefs = read_preference(/datum/preference/blob/job_priority)
 	for(var/job in job_prefs)

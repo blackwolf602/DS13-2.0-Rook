@@ -2,7 +2,6 @@
 	var/list/migrate_jobs = list(
 		"Head of Security" = JOB_SECURITY_MARSHAL,
 		"Detective" = JOB_DETECTIVE,
-		"Medical Doctor" = JOB_ACOLYTE,
 		"Curator" = JOB_ARCHIVIST,
 		"Cargo Technician" = JOB_DECKHAND,
 	)
