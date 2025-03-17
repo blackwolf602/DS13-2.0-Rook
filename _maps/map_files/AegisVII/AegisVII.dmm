@@ -37,8 +37,10 @@
 /turf/closed/wall,
 /area/station/security/courtroom)
 "abm" = (
-/obj/machinery/airalarm/directional/west,
-/turf/open/floor/deadspace/med/triage_corners,
+/obj/machinery/sleeper/old,
+/turf/open/floor/deadspace/med/triage_corners{
+	dir = 1
+	},
 /area/station/medical/treatment_center)
 "abu" = (
 /obj/effect/decal/cleanable/dirt,
@@ -375,9 +377,7 @@
 /area/station/hallway/primary/fore)
 "ajK" = (
 /obj/machinery/bodyscanner,
-/turf/open/floor/deadspace/med/triage_sides{
-	dir = 8
-	},
+/turf/open/floor/deadspace/med/triage_corners,
 /area/station/medical/treatment_center)
 "ajO" = (
 /obj/structure/table/wood,
@@ -462,10 +462,8 @@
 	},
 /area/station/hallway/primary/aft)
 "all" = (
-/obj/machinery/portable_atmospherics/canister/oxygen,
-/obj/effect/turf_decal/box/white{
-	color = "#52B4E9"
-	},
+/obj/machinery/iv_drip/saline,
+/obj/effect/turf_decal/box/white,
 /turf/open/floor/deadspace/med/triage_sides{
 	dir = 4
 	},
@@ -618,6 +616,10 @@
 	},
 /turf/open/floor/deadspace/bathroom,
 /area/mine/production)
+"aoq" = (
+/mob/living/simple_animal/bot/cleanbot/medbay,
+/turf/open/floor/deadspace/medbay/v_leftside,
+/area/station/medical/treatment_center)
 "aoA" = (
 /obj/structure/cable/yellow{
 	icon_state = "3"
@@ -2062,7 +2064,7 @@
 "bcQ" = (
 /obj/effect/landmark/event_spawn,
 /turf/open/floor/deadspace/medbay/v_leftside,
-/area/station/medical/medbay/central)
+/area/station/medical/treatment_center)
 "bde" = (
 /obj/effect/turf_decal/trimline/green/line,
 /obj/effect/turf_decal/trimline/green/line{
@@ -4431,9 +4433,9 @@
 /obj/structure/cable/yellow{
 	icon_state = "1"
 	},
-/obj/machinery/power/apc/auto_name/directional/west,
+/obj/machinery/sleeper/old,
 /turf/open/floor/deadspace/med/triage_corners{
-	dir = 4
+	dir = 8
 	},
 /area/station/medical/treatment_center)
 "clE" = (
@@ -6524,6 +6526,12 @@
 /obj/effect/spawner/structure/window/reinforced/grille,
 /turf/open/floor/plating,
 /area/station/medical/exam_room)
+"dnm" = (
+/obj/machinery/airalarm/directional/west,
+/obj/structure/table/reinforced,
+/obj/machinery/autoclave,
+/turf/open/floor/deadspace/med/triage_corners,
+/area/station/medical/treatment_center)
 "dnq" = (
 /obj/structure/chair/office{
 	dir = 4
@@ -7780,13 +7788,9 @@
 /turf/open/floor/plating,
 /area/station/maintenance/port/lesser)
 "dXR" = (
-/obj/machinery/sleeper{
-	icon_state = "sleeper";
-	dir = 8
-	},
-/turf/open/floor/deadspace/med/triage_sides{
-	dir = 8
-	},
+/obj/machinery/vending/wallmed/directional/north,
+/mob/living/simple_animal/bot/medbot,
+/turf/open/floor/deadspace/med/white_medsolo,
 /area/station/medical/treatment_center)
 "dYm" = (
 /obj/effect/turf_decal/stripes/line{
@@ -8384,7 +8388,12 @@
 /turf/open/floor/deadspace/random/rectangles,
 /area/mine/living_quarters)
 "eoq" = (
-/obj/structure/chair/stool/directional/south,
+/obj/machinery/telephone,
+/obj/structure/table/wood,
+/obj/machinery/power/data_terminal,
+/obj/structure/cable/yellow{
+	icon_state = "8"
+	},
 /turf/open/floor/wood,
 /area/station/commons/lounge)
 "eos" = (
@@ -11086,8 +11095,13 @@
 /turf/open/floor/iron/smooth_large,
 /area/station/service/chapel)
 "fPs" = (
-/obj/machinery/stasis/survival_pod,
-/turf/open/floor/deadspace/med/triage_corners,
+/obj/structure/table/reinforced,
+/obj/item/roller,
+/obj/item/roller,
+/obj/item/roller,
+/turf/open/floor/deadspace/med/triage_sides{
+	dir = 8
+	},
 /area/station/medical/treatment_center)
 "fPH" = (
 /turf/closed/wall/r_wall,
@@ -13030,9 +13044,6 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/turf_decal/siding/wood,
-/obj/structure/cable/yellow{
-	icon_state = "5"
-	},
 /turf/open/floor/wood,
 /area/station/commons/lounge)
 "gQe" = (
@@ -13128,6 +13139,10 @@
 	},
 /obj/machinery/light/cold/directional/south,
 /obj/machinery/body_scan_display/directional/south,
+/obj/structure/table/reinforced,
+/obj/item/roller,
+/obj/item/roller,
+/obj/item/roller,
 /turf/open/floor/deadspace/med/triage_sides{
 	dir = 8
 	},
@@ -13810,9 +13825,9 @@
 /turf/open/misc/asteroid,
 /area/aegis/surface)
 "hfq" = (
-/mob/living/simple_animal/bot/cleanbot/medbay,
-/turf/open/floor/deadspace/med/white_medsolo,
-/area/station/medical/treatment_center)
+/obj/machinery/sleeper/party,
+/turf/open/floor/plating,
+/area/station/maintenance/port/lesser)
 "hfB" = (
 /turf/open/floor/deadspace/random/maint_center,
 /area/station/security/checkpoint/customs)
@@ -15649,6 +15664,12 @@
 "ifi" = (
 /turf/open/floor/iron/smooth_large,
 /area/station/service/chapel)
+"ifu" = (
+/obj/structure/cable/yellow{
+	icon_state = "12"
+	},
+/turf/open/floor/wood,
+/area/station/commons/lounge)
 "ifR" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable/yellow{
@@ -15967,10 +15988,10 @@
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/structure/cable/yellow{
-	icon_state = "3"
+	icon_state = "9"
 	},
 /obj/structure/cable/yellow{
-	icon_state = "9"
+	icon_state = "5"
 	},
 /turf/open/floor/wood,
 /area/station/commons/lounge)
@@ -21828,11 +21849,9 @@
 	name = "Diagnostics Privacy Control";
 	req_access_txt = "5"
 	},
-/obj/structure/bed/pod{
-	desc = "An old medical bed, just waiting for replacement with something up to date.";
-	name = "medical bed"
-	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/item/bedsheet/medical,
+/obj/structure/bed/roller,
 /turf/open/floor/deadspace/med/triage_corners{
 	dir = 1
 	},
@@ -25537,12 +25556,8 @@
 /turf/open/floor/plating,
 /area/station/maintenance/port/lesser)
 "neK" = (
-/obj/structure/chair/stool/directional/north,
-/obj/effect/turf_decal/siding/wood{
-	dir = 8
-	},
-/turf/open/floor/wood,
-/area/station/commons/lounge)
+/turf/open/floor/deadspace/medbay/v_leftside,
+/area/station/medical/treatment_center)
 "neP" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
@@ -28330,6 +28345,11 @@
 	},
 /turf/open/floor/iron/white,
 /area/station/science/misc_lab)
+"oAW" = (
+/obj/item/radio/intercom/directional/south,
+/obj/machinery/stasis/survival_pod,
+/turf/open/floor/deadspace/med/triage_corners,
+/area/station/medical/treatment_center)
 "oBt" = (
 /obj/machinery/door/airlock/maintenance{
 	name = "Disposal Access";
@@ -28860,6 +28880,8 @@
 	dir = 4
 	},
 /obj/machinery/body_scan_display/directional/south,
+/obj/item/bedsheet/medical,
+/obj/structure/bed/roller,
 /turf/open/floor/deadspace/med/triage_sides{
 	dir = 8
 	},
@@ -29349,8 +29371,9 @@
 	},
 /area/station/ai_monitored/security/armory/upper)
 "oZk" = (
-/obj/structure/fluff/empty_sleeper,
 /obj/machinery/light/small/directional/north,
+/obj/machinery/stasis,
+/obj/item/bedsheet,
 /turf/open/floor/deadspace/med/med_plating,
 /area/station/security/medical)
 "oZm" = (
@@ -29989,8 +30012,10 @@
 /area/station/engineering/storage/tech)
 "pnC" = (
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/item/bedsheet/medical,
+/obj/structure/bed/roller,
 /turf/open/floor/deadspace/medbay/v_leftside,
-/area/station/medical/medbay/central)
+/area/station/medical/treatment_center)
 "pnG" = (
 /obj/structure/chair{
 	dir = 1
@@ -31737,7 +31762,7 @@
 /area/station/maintenance/port/lesser)
 "qhm" = (
 /obj/machinery/bodyscanner,
-/turf/open/floor/deadspace/med/triage_sides{
+/turf/open/floor/deadspace/med/triage_corners{
 	dir = 4
 	},
 /area/station/medical/treatment_center)
@@ -33804,15 +33829,11 @@
 	dir = 4;
 	pixel_x = 20
 	},
-/obj/structure/bed/pod{
-	desc = "An old medical bed, just waiting for replacement with something up to date.";
-	name = "medical bed"
-	},
-/obj/item/bedsheet,
 /obj/machinery/camera/directional/south{
 	c_tag = "Brig - Infirmary"
 	},
 /obj/machinery/newscaster/directional/south,
+/obj/machinery/sleeper/old,
 /turf/open/floor/deadspace/med/triage_corners{
 	dir = 1
 	},
@@ -35856,11 +35877,10 @@
 /turf/open/floor/deadspace/random/maint_right,
 /area/station/hallway/primary/aft)
 "srZ" = (
-/obj/machinery/sleeper{
-	icon_state = "sleeper";
-	dir = 8
-	},
-/turf/open/floor/deadspace/med/triage_sides{
+/obj/machinery/power/apc/auto_name/directional/west,
+/obj/structure/table/reinforced,
+/obj/machinery/autoclave,
+/turf/open/floor/deadspace/med/triage_corners{
 	dir = 4
 	},
 /area/station/medical/treatment_center)
@@ -37657,9 +37677,6 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/siding/wood,
-/obj/structure/cable/yellow{
-	icon_state = "12"
-	},
 /turf/open/floor/wood,
 /area/station/commons/lounge)
 "tqe" = (
@@ -39514,10 +39531,6 @@
 /turf/open/floor/deadspace/random/rectangles,
 /area/station/engineering/atmos)
 "upR" = (
-/obj/structure/bed/pod{
-	desc = "An old medical bed, just waiting for replacement with something up to date.";
-	name = "medical bed"
-	},
 /turf/open/floor/deadspace/med/triage_corners{
 	dir = 8
 	},
@@ -44563,8 +44576,9 @@
 /turf/open/floor/deadspace/medical,
 /area/station/security/detectives_office)
 "wTn" = (
-/obj/item/radio/intercom/directional/south,
-/turf/closed/wall,
+/turf/open/floor/deadspace/med/triage_sides{
+	dir = 8
+	},
 /area/station/medical/treatment_center)
 "wTF" = (
 /obj/structure/disposalpipe/segment{
@@ -45647,16 +45661,11 @@
 /area/mine/living_quarters)
 "xvS" = (
 /obj/item/radio/intercom/directional/east,
-/obj/structure/table/wood,
-/obj/machinery/telephone,
-/obj/machinery/power/data_terminal,
 /obj/machinery/light/directional/east,
 /obj/effect/turf_decal/siding/wood/corner{
 	dir = 8
 	},
-/obj/structure/cable/yellow{
-	icon_state = "8"
-	},
+/obj/structure/chair/stool/directional/north,
 /turf/open/floor/wood,
 /area/station/commons/lounge)
 "xvW" = (
@@ -62387,7 +62396,7 @@ dBD
 vDj
 cpN
 wwN
-iRv
+hfq
 vDj
 iRv
 tpe
@@ -84353,7 +84362,7 @@ oZz
 flC
 sEB
 cNo
-xwC
+ifu
 tpZ
 wne
 lMo
@@ -84512,7 +84521,7 @@ oFy
 gya
 eoq
 xvS
-neK
+wIb
 djs
 gcD
 ngv
@@ -87968,11 +87977,11 @@ mBX
 fvy
 ctZ
 tma
-iui
-dBD
-dBD
-dBD
-dBD
+srZ
+dnm
+jYr
+pub
+oAW
 upa
 bhh
 kKJ
@@ -88125,10 +88134,10 @@ oKS
 hKr
 ctZ
 tma
-jXa
-jXa
-jXa
-jXa
+wqo
+wTn
+mLe
+wqo
 wTn
 upa
 wrz
@@ -88284,8 +88293,8 @@ fRr
 qbV
 clm
 abm
-jYr
-pub
+mLe
+wqo
 fPs
 upa
 wDx
@@ -88439,9 +88448,9 @@ ayH
 hKr
 ctZ
 tma
-srZ
+jXa
+jXa
 dXR
-mLe
 wqo
 gRa
 upa
@@ -88598,7 +88607,7 @@ ctZ
 tma
 qhm
 ajK
-hfq
+mLe
 wqo
 oKz
 upa
@@ -88910,10 +88919,10 @@ xuP
 hIn
 ctZ
 tma
-uvJ
-uvJ
+aoq
+neK
 bcQ
-uvJ
+neK
 pnC
 iui
 qAD
