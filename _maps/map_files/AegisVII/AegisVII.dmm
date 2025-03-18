@@ -19253,7 +19253,7 @@
 /turf/open/floor/deadspace/random/rectangles,
 /area/station/cargo/warehouse)
 "jWY" = (
-/obj/machinery/light/no_nightlight/directional/east,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron/dark,
 /area/station/engineering/atmos)
 "jXa" = (
@@ -23192,7 +23192,7 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 4
 	},
-/obj/machinery/light/no_nightlight/directional/west,
+/obj/machinery/light/directional/west,
 /turf/open/floor/iron/dark,
 /area/station/engineering/atmos)
 "lWp" = (
@@ -24391,7 +24391,7 @@
 /obj/machinery/light_switch/directional/north,
 /obj/machinery/pipedispenser/disposal,
 /obj/effect/turf_decal/stripes/line,
-/obj/machinery/light/no_nightlight/directional/north,
+/obj/machinery/light/directional/north,
 /turf/open/floor/deadspace/random/rectangles,
 /area/station/engineering/atmos)
 "mAm" = (
@@ -39609,7 +39609,7 @@
 /obj/machinery/atmospherics/pipe/smart/simple/yellow/visible{
 	dir = 10
 	},
-/obj/machinery/light/no_nightlight/directional/east,
+/obj/machinery/light/directional/east,
 /turf/open/floor/iron/dark,
 /area/station/engineering/atmos)
 "urY" = (
@@ -41835,7 +41835,7 @@
 /obj/machinery/atmospherics/components/unary/portables_connector/visible{
 	dir = 4
 	},
-/obj/machinery/light/no_nightlight/directional/west,
+/obj/machinery/light/directional/west,
 /turf/open/floor/deadspace/random/rectangles,
 /area/station/engineering/atmos)
 "vxX" = (
@@ -42400,7 +42400,7 @@
 /area/aegis/surface)
 "vMr" = (
 /obj/item/radio/intercom/directional/south,
-/obj/machinery/light/no_nightlight/directional/south,
+/obj/machinery/light/directional/south,
 /turf/open/floor/deadspace/random/rectangles,
 /area/station/engineering/atmos)
 "vMz" = (
