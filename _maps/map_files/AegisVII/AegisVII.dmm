@@ -37,7 +37,9 @@
 /turf/closed/wall,
 /area/station/security/courtroom)
 "abm" = (
-/obj/machinery/sleeper/old,
+/obj/machinery/sleeper{
+	dir = 8
+	},
 /turf/open/floor/deadspace/med/triage_corners{
 	dir = 1
 	},
@@ -4429,7 +4431,9 @@
 /obj/structure/cable/yellow{
 	icon_state = "1"
 	},
-/obj/machinery/sleeper/old,
+/obj/machinery/sleeper{
+	dir = 8
+	},
 /turf/open/floor/deadspace/med/triage_corners{
 	dir = 8
 	},
@@ -13417,6 +13421,10 @@
 	dir = 1
 	},
 /area/aegis/hanger)
+"gXi" = (
+/obj/machinery/sleeper/mancrowave,
+/turf/open/floor/deadspace/med/white_medsolo,
+/area/station/medical/medbay/central)
 "gXq" = (
 /obj/structure/closet/secure_closet/personal,
 /obj/effect/turf_decal/box,
@@ -33838,7 +33846,9 @@
 	c_tag = "Brig - Infirmary"
 	},
 /obj/machinery/newscaster/directional/south,
-/obj/machinery/sleeper/old,
+/obj/machinery/sleeper{
+	dir = 8
+	},
 /turf/open/floor/deadspace/med/triage_corners{
 	dir = 1
 	},
@@ -88938,7 +88948,7 @@ iui
 qAD
 wUV
 cdr
-okY
+gXi
 okY
 okY
 jLr
