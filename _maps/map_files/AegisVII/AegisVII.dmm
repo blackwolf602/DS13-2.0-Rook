@@ -23736,6 +23736,14 @@
 /obj/machinery/door/window/brigdoor/left/directional/south,
 /turf/open/floor/iron/dark,
 /area/station/maintenance/port/lesser)
+"mjt" = (
+/obj/structure/cable/yellow{
+	icon_state = "12"
+	},
+/turf/open/floor/deadspace/med/side_med{
+	dir = 1
+	},
+/area/station/medical/medbay/central)
 "mjA" = (
 /obj/machinery/photocopier,
 /obj/structure/window/reinforced/spawner/west,
@@ -31527,6 +31535,9 @@
 	icon_state = "3"
 	},
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/structure/cable/yellow{
+	icon_state = "10"
+	},
 /turf/open/floor/deadspace/med/side_med{
 	dir = 1
 	},
@@ -38498,6 +38509,9 @@
 /obj/machinery/power/apc/auto_name/directional/west,
 /obj/structure/table/reinforced,
 /obj/machinery/autoclave,
+/obj/structure/cable/yellow{
+	icon_state = "1"
+	},
 /turf/open/floor/deadspace/med/triage_corners{
 	dir = 4
 	},
@@ -47160,6 +47174,14 @@
 	},
 /turf/open/floor/carpet/red,
 /area/station/maintenance/port/lesser)
+"yfw" = (
+/obj/structure/cable/yellow{
+	icon_state = "6"
+	},
+/turf/open/floor/deadspace/med/side_med{
+	dir = 1
+	},
+/area/station/medical/medbay/central)
 "yfx" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 4
@@ -88008,7 +88030,7 @@ cWF
 mBX
 fvy
 ctZ
-tma
+yfw
 tLI
 nOH
 jYr
@@ -88165,7 +88187,7 @@ fzQ
 oKS
 hKr
 ctZ
-tma
+mjt
 wqo
 wTn
 mLe
