@@ -54,11 +54,8 @@ GLOBAL_LIST_EMPTY(markers_signals)
 				ability.Grant(src)
 
 	if(marker.active)
-		for(var/datum/action/cooldown/necro/corruption/ability as anything in subtypesof(/datum/action/cooldown/necro/corruption))
-			if(initial(ability.marker_only) && !istype(src, /mob/camera/marker_signal/marker))
-				continue
-			ability = new ability(src)
-			ability.Grant(src)
+		var/datum/action/cooldown/necro/corruption/ability = new /datum/action/cooldown/necro/corruption(src)
+		ability.Grant(src)
 
 	START_PROCESSING(SSobj, src)
 
