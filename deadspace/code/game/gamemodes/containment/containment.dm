@@ -96,15 +96,23 @@
 	priority_announce("Thanks to the tireless efforts of our security and intelligence divisions, there are currently no credible threats to [station_name()]. All station construction projects have been authorized. Have a secure shift!", "Security Report", "", SSstation.announcer.get_rand_report_sound())
 
 /datum/game_mode/containment/check_finished(force_ending)
-	. = ..()
+	. = FALSE
+
+	if(!SSticker.setup_done)
+		return
+
+	if(GLOB.station_was_nuked) //OH GOD SOMEONE STOP THE EDF
+		return TRUE
+
 	if(force_ending)
 		return TRUE
 
 	if(main_marker?.active)
-		if(length(GLOB.joined_player_list) >= minimum_round_crew)
-			var/minimum_living_crew = ROUND_UP(length(GLOB.joined_player_list) * minimum_alive_percentage)
-			if (get_living_active_crew_on_station() < minimum_living_crew)
-				return TRUE
+		if(get_living_active_crew_on_station() == 0 & (SSshuttle.emergency.mode == SHUTTLE_ENDGAME)) //Everyone is dead or escaped, start round end
+			return TRUE
+
+//TODO : Set up a proper round result system for necro / crew win stages
+//datum/game_mode/containment/set_round_result()
 
 /proc/get_living_active_crew_on_station()
 	. = 0
