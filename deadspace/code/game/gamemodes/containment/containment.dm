@@ -108,7 +108,7 @@
 		return TRUE
 
 	if(main_marker?.active)
-		if(get_living_active_crew_on_station() == 0) //Everyone is dead or escaped, start round end
+		if(get_living_active_crew_on_station() == 0 && !(SSshuttle.emergency.mode == SHUTTLE_ESCAPE)) //Everyone is dead or escaped, start round end
 			return TRUE
 
 //TODO : Set up a proper round result system for necro / crew win stages
