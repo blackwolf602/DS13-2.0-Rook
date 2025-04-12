@@ -5,12 +5,12 @@
 	background_icon_state = "bg_demon"
 	buttontooltipstyle = "cult"
 	button_icon_state = "cult_mark"
+	var/list/poorsod
 
 //This is rewritten cultist harvester code kitbashed into the original sense code
 //It works well enough for our purposes
 /datum/action/innate/sense/Activate()
 	var/mob/living/carbon/human/necromorph/sensor = owner
-	var/list/poorsod
 	if(sensor.marker == null)
 		return
 	if(sensor.searching) //Resets sense if it is already on
