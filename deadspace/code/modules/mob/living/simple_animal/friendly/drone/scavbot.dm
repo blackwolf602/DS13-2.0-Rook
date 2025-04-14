@@ -20,7 +20,7 @@
 	laws = \
 	"1. You may not injure a human being or cause a human being to come to harm.\n"+\
 	"2. You may not interfere with humans, unless you or another human is being harmed.\n"+\
-	"3. You may not harm or injure unidentified lifeforms.\n"+\
+	"3. You may not injure unidentified lifeforms.\n"+\
 	"4. Collect items and resources that are outside of their appropriate department or area.\n"+\
 	"5. Deliver the found items and resources to the appropriate department or person.\n"+\
 	"6. Do not use found items and resources, unless doing so would result in the acquiring of more items and resources.\n"+\
