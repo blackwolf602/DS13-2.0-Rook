@@ -1,7 +1,7 @@
 //#define CONTAINMENT_WEIGHT_UNITOLOGIST 100 //Uncomment when we have psuedo antag unitologists
 
 //What percentage of our population can become antags
-#define CONTAINMENT_ANTAG_COEFF 0.15
+#define CONTAINMENT_ANTAG_COEFF 0.10
 
 /datum/game_mode/containment
 	name = "Containment"
@@ -20,7 +20,6 @@
 
 	var/obj/structure/marker/main_marker
 	var/minimum_round_crew = 2
-	var/minimum_alive_percentage = 0.1 //0.1 = 10%
 
 /datum/game_mode/containment/New()
 	. = ..()
@@ -122,6 +121,8 @@
 		if(alive.client.is_afk())
 			continue
 		if(isnecromorph(alive)) //So we don't count necromorphs
+			continue
+		if(issignal(alive)) //This should never happen, but through pure shenanigans it sometimes does
 			continue
 		var/turf/location = get_turf(alive)
 		if(!location || !SSmapping.level_trait(location.z, ZTRAIT_STATION))
