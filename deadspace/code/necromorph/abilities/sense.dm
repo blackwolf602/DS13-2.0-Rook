@@ -5,7 +5,7 @@
 	background_icon_state = "bg_demon"
 	buttontooltipstyle = "cult"
 	button_icon_state = "cult_mark"
-	var/list/poorsod
+	var/list/poorsod = list()
 
 //This is rewritten cultist harvester code kitbashed into the original sense code
 //It works well enough for our purposes
@@ -22,8 +22,9 @@
 		sensor.clear_alert("necrosense")
 		return
 
-	for(var/mob/living/survivors as anything in GLOB.player_list) //We look for any mob with a client
-		if(survivors.stat != DEAD && !isnecromorph(survivors) && is_station_level(survivors.loc?.z))
+	//We look for any mob with a client, avoids necros and signals
+	for(var/mob/living/survivors as anything in GLOB.player_list)
+		if(survivors.stat != DEAD && !isnecromorph(survivors) && !ismarkereye(survivors) && is_station_level(survivors.loc?.z))
 			poorsod += survivors
 
 	if(!poorsod) //If the list is empty then it is because there is nobody on this floor
@@ -34,6 +35,7 @@
 		found = pick(poorsod)
 		sensor.sense_target = found
 		to_chat(sensor, "<span class='cult italic'>You are now tracking your prey, [found.real_name] - find [found.p_them()]!</span>")
+		break
 
 	desc = "Activate to stop sensing."
 	button_icon_state = "sintouch"
