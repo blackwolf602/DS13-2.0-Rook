@@ -122,7 +122,11 @@
 			continue
 		if(isnecromorph(alive)) //So we don't count necromorphs
 			continue
-		if(issignal(alive)) //This should never happen, but through pure shenanigans it sometimes does
+		if(ismarkereye(alive)) //This should never happen, but through pure shenanigans it sometimes does
+			continue
+		if(isanimal_or_basicmob(alive)) //Don't include anything not strictly human
+			continue
+		if(issilicon(alive)) //Don't include silicons either
 			continue
 		var/turf/location = get_turf(alive)
 		if(!location || !SSmapping.level_trait(location.z, ZTRAIT_STATION))
