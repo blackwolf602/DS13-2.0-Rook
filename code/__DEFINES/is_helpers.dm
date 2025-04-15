@@ -118,6 +118,8 @@ GLOBAL_LIST_INIT(turfs_without_ground, typecacheof(list(
 //Necromorph signal cameras
 #define ismarkereye(A) (istype(A, /mob/camera/marker_signal))
 
+#define ismarkereyemaster(A) (istype(A, /mob/camera/marker_signal/marker))
+
 //Silicon mobs
 #define issilicon(A) (istype(A, /mob/living/silicon))
 

@@ -101,11 +101,8 @@
 				ability.Remove(eye)
 			if((ability.marker_flags & SIGNAL_ABILITY_POST_ACTIVATION))
 				ability.Grant(eye)
-		for(var/datum/action/cooldown/necro/corruption/ability as anything in subtypesof(/datum/action/cooldown/necro/corruption))
-			if(initial(ability.marker_only) && !istype(eye, /mob/camera/marker_signal/marker))
-				continue
-			ability = new ability(eye)
-			ability.Grant(eye)
+		var/datum/action/cooldown/necro/corruption/ability = new /datum/action/cooldown/necro/corruption(eye)
+		ability.Grant(eye)
 	new /datum/corruption_node/atom/marker(src, src)
 	update_icon(UPDATE_ICON_STATE)
 	light_power = 1

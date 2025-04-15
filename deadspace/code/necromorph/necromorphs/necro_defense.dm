@@ -1,8 +1,7 @@
 //The primary attack, which goes directly into attack_necromorph
-/mob/living/carbon/human/necromorph/UnarmedAttack(atom/A, proximity_flag, list/modifiers)
-	A.attack_necromorph(src, modifiers)
-	changeNext_move(CLICK_CD_MELEE)
-	return
+/mob/living/carbon/human/necromorph/resolve_unarmed_attack(atom/attack_target, list/modifiers)
+	attack_target.attack_necromorph(src, modifiers)
+
 
 //The proc and backup rolled up in one.
 /atom/proc/attack_necromorph(mob/living/carbon/human/necromorph/user, list/modifiers, dealt_damage)
