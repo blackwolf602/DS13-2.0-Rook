@@ -15,7 +15,7 @@
 
 /mob/living/carbon/human/proc/signal_update_name(datum/source)
 	SIGNAL_HANDLER
-	update_name()
+	update_appearance(UPDATE_NAME)
 
 /// Called when TRAIT_JAUNDICE_SKIN is gained.
 /mob/living/carbon/human/proc/on_jaundice_gain(datum/source)
