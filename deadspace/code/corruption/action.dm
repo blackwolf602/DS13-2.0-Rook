@@ -50,9 +50,15 @@
 	for(var/obj/structure/necromorph/struct as anything in subtypesof(/obj/structure/necromorph) - /obj/structure/necromorph/node)
 		if(struct.marker_only && !ismarkereyemaster(owner))
 			continue
-		list_to_pick["[initial(struct.name)] - [initial(struct.cost)]"] = struct
+		var/datum/radial_menu_choice/option = new
+		option.image = image(icon = initial(struct.icon), icon_state = initial(struct.icon_state))
+		option.name = "[initial(struct.name)]"
+		option.info = span_boldnotice("[initial(struct.name)] | Cost: [initial(struct.cost)]")
 
-	place_structure = list_to_pick[tgui_input_list(owner, "Pick a structure to spawn", "Spawning", list_to_pick)]
+		list_to_pick[struct] = option
+
+	sort_list(list_to_pick)
+	place_structure = show_radial_menu(owner, owner, list_to_pick, radius = 54)
 
 	if(!place_structure)
 		return

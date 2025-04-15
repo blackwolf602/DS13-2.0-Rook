@@ -131,6 +131,9 @@ GLOBAL_LIST_EMPTY(markers_signals)
 		possess_necromorph(A)
 		return
 
+	if(istype(A, /obj/effect/abstract))
+		return
+
 	if(istype(A, /atom/movable/screen/cameranet_static))
 		// Find a turf below the location we clicked at
 		var/list/list_params = params2list(params)
