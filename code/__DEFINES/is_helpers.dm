@@ -177,6 +177,8 @@ GLOBAL_LIST_INIT(turfs_without_ground, typecacheof(list(
 
 #define ismarkereye(A) (istype(A, /mob/camera/marker_signal))
 
+#define ismarkereyemaster(A) (istype(A, /mob/camera/marker_signal/marker))
+
 #define isdead(A) (istype(A, /mob/dead))
 
 #define isnewplayer(A) (istype(A, /mob/dead/new_player))
