@@ -1,6 +1,5 @@
-author: mogeoko
-delete-after: true
-changes:
+2025-04-16:
+  mogeoko:
   - code_imp: Changed "minigrowth" icon_state to "minigrowth1"
   - code_imp: Added a safety check to prevent sending marker eyes to nowhere in the
       /DblClickOn proc
