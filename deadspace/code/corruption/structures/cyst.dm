@@ -68,7 +68,7 @@
 	desc = "A wiggling creature which looks fit to burst any moment"
 	icon = 'deadspace/icons/effects/corruption.dmi'
 	icon_state= "cyst-bomb-primed"
-	damage = 45
+	damage = 25
 	damage_type = BURN
 	armor_flag = BIO
 
