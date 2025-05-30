@@ -391,7 +391,8 @@
 
 	if(nutrition < 100 && !blood && !force)
 		if(message)
-			visible_message(span_notice("<b>[src]</b> dry heaves."), blind_message = span_hear("You hear someone dry heave."))
+			spawn(-1)
+				emote(/datum/emote/living/carbon/gasp_air/dry_heave)
 		if(stun)
 			Paralyze(200)
 		return TRUE
@@ -409,7 +410,7 @@
 
 	playsound(get_turf(src), 'sound/effects/splat.ogg', 50, TRUE)
 	var/turf/T = get_turf(src)
-	if(!blood)
+	if(!blood && lost_nutrition)
 		adjust_nutrition(-lost_nutrition)
 		adjustToxLoss(-3)
 
