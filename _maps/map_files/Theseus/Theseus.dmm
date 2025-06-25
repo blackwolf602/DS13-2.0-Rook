@@ -3864,6 +3864,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
+/obj/structure/chair/stool/wood,
 /turf/open/floor/iron,
 /area/station/commons/lounge)
 "boY" = (
@@ -4269,7 +4270,6 @@
 /turf/open/floor/iron,
 /area/station/ai_monitored/command/storage/eva)
 "bwP" = (
-/obj/structure/table/reinforced,
 /obj/effect/turf_decal/tile/bar,
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
@@ -4280,6 +4280,7 @@
 /obj/item/reagent_containers/condiment/peppermill{
 	pixel_x = 3
 	},
+/obj/structure/table/wood,
 /turf/open/floor/iron,
 /area/station/service/bar)
 "bxn" = (
@@ -8548,7 +8549,6 @@
 /turf/open/floor/plating,
 /area/station/maintenance/aft/greater)
 "ddG" = (
-/obj/structure/table/reinforced,
 /obj/machinery/power/data_terminal,
 /obj/machinery/telephone/service,
 /obj/effect/turf_decal/tile/bar,
@@ -8559,6 +8559,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "4"
 	},
+/obj/structure/table/wood,
 /turf/open/floor/iron,
 /area/station/service/bar)
 "dee" = (
@@ -15023,7 +15024,6 @@
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/fore)
 "fyU" = (
-/obj/structure/chair/stool/bar/directional/south,
 /obj/effect/turf_decal/tile/bar,
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
@@ -15032,6 +15032,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
+/obj/structure/chair/stool/wood,
 /turf/open/floor/iron,
 /area/station/commons/lounge)
 "fyV" = (
@@ -23966,7 +23967,6 @@
 /turf/open/floor/plating,
 /area/station/construction/storage_wing)
 "jeC" = (
-/obj/structure/table/reinforced,
 /obj/effect/turf_decal/tile/bar,
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
@@ -23974,6 +23974,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "10"
 	},
+/obj/structure/table/wood,
 /turf/open/floor/iron,
 /area/station/service/bar)
 "jeN" = (
@@ -30623,8 +30624,8 @@
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
 	},
-/obj/structure/table/reinforced,
 /obj/effect/spawner/random/entertainment/lighter,
+/obj/structure/table/wood,
 /turf/open/floor/iron,
 /area/station/service/bar)
 "lzV" = (
@@ -32536,17 +32537,6 @@
 	dir = 1
 	},
 /turf/open/floor/wood,
-/area/station/commons/lounge)
-"mnX" = (
-/obj/effect/turf_decal/tile/bar,
-/obj/effect/turf_decal/tile/bar{
-	dir = 1
-	},
-/obj/structure/chair/stool/bar/directional/south,
-/obj/effect/turf_decal/siding/wood{
-	dir = 1
-	},
-/turf/open/floor/iron,
 /area/station/commons/lounge)
 "mnY" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -40942,8 +40932,8 @@
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
 	},
-/obj/structure/table/reinforced,
 /obj/item/holosign_creator/robot_seat/bar,
+/obj/structure/table/wood,
 /turf/open/floor/iron,
 /area/station/service/bar)
 "pob" = (
@@ -45520,12 +45510,12 @@
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
 	},
-/obj/structure/chair/stool/bar/directional/south,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
 	},
+/obj/structure/chair/stool/wood,
 /turf/open/floor/iron,
 /area/station/commons/lounge)
 "rcI" = (
@@ -62068,10 +62058,10 @@
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
 	},
-/obj/structure/table/reinforced,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/effect/spawner/random/entertainment/lighter,
+/obj/structure/table/wood,
 /turf/open/floor/iron,
 /area/station/service/bar)
 "xjg" = (
@@ -98354,7 +98344,7 @@ ndd
 fAJ
 twU
 fAJ
-mnX
+boT
 bwP
 kjI
 yeL
@@ -98611,7 +98601,7 @@ xjg
 fAJ
 atk
 iqP
-mnX
+boT
 lzu
 tVh
 dIm
@@ -98868,7 +98858,7 @@ qpS
 fAJ
 lMo
 taP
-mnX
+boT
 pnY
 uyu
 hSw
