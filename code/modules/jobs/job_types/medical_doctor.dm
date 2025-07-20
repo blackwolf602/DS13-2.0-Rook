@@ -46,6 +46,11 @@
 	job_flags = JOB_ANNOUNCE_ARRIVAL | JOB_CREW_MANIFEST | JOB_EQUIP_RANK | JOB_CREW_MEMBER | JOB_NEW_PLAYER_JOINABLE | JOB_REOPEN_ON_ROUNDSTART_LOSS | JOB_ASSIGN_QUIRKS | JOB_CAN_BE_INTERN
 
 
+/datum/job/acolyte/after_spawn(mob/living/spawned, client/player_client)
+	. = ..()
+	if(!isvox(spawned))
+		spawned.AddComponent(/datum/component/clothing_lover, list(/obj/item/clothing/mask/utopia), "aether_maskless", /datum/mood_event/aether_maskless, ITEM_SLOT_MASK)
+
 /datum/outfit/job/doctor
 	name = JOB_MEDICAL_DOCTOR
 	jobtype = /datum/job/doctor
@@ -54,14 +59,18 @@
 	neck = /obj/item/clothing/neck/stethoscope
 	uniform = /obj/item/clothing/under/rank/medical/ds_med
 	suit = /obj/item/clothing/suit/toggle/labcoat/md
-	suit_store = /obj/item/flashlight/pen
 	belt = /obj/item/modular_computer/tablet/pda/medical
 	ears = /obj/item/radio/headset/headset_med
 	shoes = /obj/item/clothing/shoes/sneakers/white
 	l_hand = /obj/item/storage/medkit/surgery
+	mask = /obj/item/clothing/mask/utopia
 
 	box = /obj/item/storage/box/survival/medical
 	chameleon_extras = /obj/item/gun/syringe
+
+	backpack_contents = list(
+		/obj/item/diagnosis_book = 1,
+	)
 
 /datum/outfit/job/doctor/mod
 	name = JOB_MEDICAL_DOCTOR + " (MODsuit)"
