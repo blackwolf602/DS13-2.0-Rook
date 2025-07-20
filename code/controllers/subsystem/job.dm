@@ -935,7 +935,7 @@ SUBSYSTEM_DEF(job)
 	if(id_slot)
 		var/obj/item/card/id/id_card = id_slot.GetID(TRUE) || locate() in id_slot
 		if(id_card && !(ACCESS_HEADS in id_card.access))
-			id_card.add_wildcards(list(ACCESS_HEADS), mode=FORCE_ADD_ALL)
+			id_card.add_access(ACCESS_FACTION_LEADER)
 
 	assigned_captain = TRUE
 
@@ -955,9 +955,9 @@ SUBSYSTEM_DEF(job)
 
 	var/datum/job/head_job = SSjob.GetJobType(department.department_head)
 	var/datum/outfit/outfit_prototype = head_job.outfits["Default"][SPECIES_HUMAN]
-	var/datum/id_trim/trim = SSid_access.trim_singletons_by_path[initial(outfit_prototype.id_trim)]
+	var/datum/access_template/trim = SSid_access.template_singletons_by_path[initial(outfit_prototype.id_template)]
 
-	id_card.add_access(trim.access, mode=FORCE_ADD_ALL)
+	id_card.add_access(trim.access)
 
 	SSdatacore.OnReady(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(aas_pda_message_department), department.manifest_key, "Your boss called out of work today, and [new_head.real_name] [new_head.p_have()] been granted elevated access in their absence.", "Staff Notice"))
 	temporary_heads_by_dep[department.type] = new_head.real_name

@@ -117,7 +117,7 @@
 	name = "Chaplain"
 	jobtype = /datum/job/chaplain
 
-	id_trim = /datum/id_trim/job/chaplain
+	id_template = /datum/access_template/job/chaplain
 	uniform = /obj/item/clothing/under/rank/civilian/ds_clergy
 	backpack_contents = list(
 		/obj/item/camera/spooky = 1,

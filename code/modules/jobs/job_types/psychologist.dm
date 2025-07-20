@@ -48,7 +48,7 @@
 	jobtype = /datum/job/psychologist
 
 	id = /obj/item/card/id/advanced
-	id_trim = /datum/id_trim/job/psychologist
+	id_template = /datum/access_template/job/psychologist
 	uniform = /obj/item/clothing/under/rank/medical/ds_med
 	backpack_contents = list(
 		/obj/item/storage/pill_bottle/lsdpsych,

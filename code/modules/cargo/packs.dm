@@ -521,7 +521,7 @@
 	name = "Incendiary Weapons Crate"
 	desc = "Burn, baby burn. Contains three incendiary grenades, three plasma canisters, and a flamethrower. Requires Armory access to open."
 	cost = CARGO_CRATE_VALUE * 7
-	access = ACCESS_MANAGEMENT
+	access = ACCESS_FACTION_LEADER
 	contains = list(/obj/item/flamethrower/full,
 					/obj/item/tank/internals/plasma,
 					/obj/item/tank/internals/plasma,

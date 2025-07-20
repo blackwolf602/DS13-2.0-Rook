@@ -51,7 +51,7 @@
 	name = "Bartender"
 	jobtype = /datum/job/bartender
 
-	id_trim = /datum/id_trim/job/bartender
+	id_template = /datum/access_template/job/bartender
 	uniform = /obj/item/clothing/under/rank/civilian/bartender
 	suit = /obj/item/clothing/suit/armor/vest
 	backpack_contents = list(
