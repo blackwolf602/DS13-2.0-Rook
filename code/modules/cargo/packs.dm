@@ -1354,8 +1354,7 @@
 					/obj/item/stack/medical/bone_gel/twelve,
 					/obj/item/stack/medical/bone_gel/twelve,
 					/obj/item/vending_refill/medical,
-					/obj/item/vending_refill/drugs,
-					/obj/item/vending_refill/chemicals)
+					/obj/item/vending_refill/drugs)
 	crate_name = "medical supplies crate"
 
 /datum/supply_pack/medical/supplies/fill(obj/structure/closet/crate/C)
@@ -2944,8 +2943,7 @@
 	cost = CARGO_CRATE_VALUE * 5
 	contains = list(/obj/item/vending_refill/medical,
 					/obj/item/vending_refill/drugs,
-					/obj/item/vending_refill/wallmed,
-					/obj/item/vending_refill/chemicals)
+					/obj/item/vending_refill/wallmed)
 	crate_name = "medical vending crate"
 
 /datum/supply_pack/vending/ptech

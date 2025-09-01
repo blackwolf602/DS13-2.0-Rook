@@ -278,12 +278,6 @@ GLOBAL_LIST_INIT(uncommon_loot, list(//uncommon: useful items
 		/obj/item/gun/ballistic/automatic/pistol/divet/rb = 1,
 		/obj/item/gun/ballistic/automatic/pistol/divet/no_mag = 1,
 		) = 1,
-	list(//data disks for lathes
-		/obj/item/disk/data/hyper/preloaded/fabricator/engineering = 1,
-		/obj/item/disk/data/hyper/preloaded/fabricator/medical = 1,
-		/obj/item/disk/data/hyper/preloaded/fabricator/supply = 1,
-		/obj/item/disk/data/hyper/preloaded/fabricator/service = 1,
-		) = 1,
 ))
 
 
@@ -331,7 +325,7 @@ GLOBAL_LIST_INIT(rarity_loot, list(//rare: really good items
 		/obj/item/skillchip/brainwashing = 1,
 		/obj/effect/spawner/random/deadspace/rig = 1,
 
-		//weapons 
+		//weapons
 		/obj/item/fireaxe/hugewrench = 1,
 		/obj/item/gun/ballistic/shotgun/scl_shotgun/no_mag = 1,
 		/obj/item/gun/ballistic/pulse/no_mag = 1,
@@ -342,13 +336,6 @@ GLOBAL_LIST_INIT(rarity_loot, list(//rare: really good items
 		/obj/item/ammo_box/magazine/ds12g = 1,
 		/obj/item/ammo_box/magazine/pulse = 1,
 		) = 1,
-
-	list(//data disks for lathes
-		/obj/item/disk/data/hyper/preloaded/fabricator/security = 1,
-		/obj/item/disk/data/hyper/preloaded/fabricator/imprinter = 1,
-		/obj/item/disk/data/hyper/preloaded/fabricator/civ = 1,
-		) = 1,
-
 ))
 
 
@@ -368,7 +355,6 @@ GLOBAL_LIST_INIT(oddity_loot, list(//oddity: strange or crazy items
 			/obj/item/instrument/trumpet/spectral = 1,
 			) = 1,
 		/obj/item/toy/cards/deck/tarot/haunted = 1,
-		/obj/item/disk/data/hyper/preloaded/fabricator/omni = 1,
 	))
 
 //Maintenance loot spawner pools
