@@ -180,9 +180,9 @@
 	job = /datum/job/chief_engineer
 	datacore_record_key = DATACORE_RECORDS_DAEDALUS
 
-/datum/id_trim/job/chief_medical_officer
+/datum/access_template/job/chief_medical_officer
 	assignment = "Medical Director"
-	intern_alt_name = "Medical Director-in-Training"
+	intern_alt_name = JOB_MEDICAL_DIRECTOR + "-in-Training"
 	template_state = "trim_chiefmedicalofficer"
 	sechud_icon_state = SECHUD_CHIEF_MEDICAL_OFFICER
 	extra_access = list(ACCESS_TELEPORTER)
@@ -265,7 +265,7 @@
 					ACCESS_DELEGATE, ACCESS_HYDROPONICS, ACCESS_JANITOR, ACCESS_KEYCARD_AUTH, ACCESS_KITCHEN, ACCESS_LAWYER, ACCESS_LIBRARY,
 					ACCESS_MAINT_TUNNELS, ACCESS_MECH_ENGINE, ACCESS_MECH_MEDICAL, ACCESS_MECH_SCIENCE, ACCESS_MECH_SECURITY, ACCESS_MEDICAL,
 					ACCESS_RC_ANNOUNCE, ACCESS_RESEARCH, ACCESS_TELEPORTER,
-					ACCESS_THEATRE, ACCESS_VAULT, ACCESS_WEAPONS, ACCESS_FACTION_LEADER, ACCESS_MANAGEMENT)
+					ACCESS_THEATRE, ACCESS_VAULT, ACCESS_WEAPONS, ACCESS_MANAGEMENT)
 	config_job = "head_of_personnel"
 	template_access = list(ACCESS_CAPTAIN, ACCESS_CHANGE_IDS)
 	job = /datum/job/head_of_personnel
@@ -279,7 +279,7 @@
 	minimal_access = list(ACCESS_ALL_PERSONAL_LOCKERS, ACCESS_ARMORY, ACCESS_AUX_BASE, ACCESS_COURT,
 					ACCESS_ENGINEERING, ACCESS_EVA, ACCESS_FORENSICS, ACCESS_HOS, ACCESS_KEYCARD_AUTH,
 					ACCESS_MAINT_TUNNELS, ACCESS_MECH_SECURITY, ACCESS_MEDICAL, ACCESS_RC_ANNOUNCE,
-					ACCESS_RESEARCH, ACCESS_SECURITY, ACCESS_WEAPONS, ACCESS_FACTION_LEADER, ACCESS_ALL_PERSONAL_LOCKERS, ACCESS_MANAGEMENT)
+					ACCESS_RESEARCH, ACCESS_SECURITY, ACCESS_WEAPONS, ACCESS_ALL_PERSONAL_LOCKERS, ACCESS_MANAGEMENT)
 	config_job = "head_of_security"
 	template_access = list(ACCESS_CAPTAIN, ACCESS_CHANGE_IDS)
 	job = /datum/job/head_of_security
@@ -315,7 +315,7 @@
 	template_access = list(ACCESS_CAPTAIN, ACCESS_DELEGATE, ACCESS_HOS, ACCESS_CHANGE_IDS)
 	job = /datum/job/lawyer
 
-/datum/id_trim/job/medical_doctor
+/datum/access_template/job/medical_doctor
 	assignment = JOB_MEDICAL_DOCTOR
 	template_state = "trim_medicaldoctor"
 	sechud_icon_state = SECHUD_MEDICAL_DOCTOR

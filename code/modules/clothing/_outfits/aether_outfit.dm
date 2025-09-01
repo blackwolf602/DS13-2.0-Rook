@@ -49,7 +49,7 @@ TYPEINFO_DEF(/obj/item/clothing/mask/utopia)
 
 /obj/item/clothing/mask/utopia/augur/equipped(mob/living/M, slot)
 	. = ..()
-	if((slot & slot_flags) && !istype(M.mind?.assigned_role, /datum/job/augur))
+	if((slot & slot_flags) && !istype(M.mind?.assigned_role, /datum/job/chief_medical_officer))
 		M.apply_status_effect(/datum/status_effect/augur_mask)
 
 /obj/item/clothing/mask/utopia/augur/unequipped(mob/living/M)

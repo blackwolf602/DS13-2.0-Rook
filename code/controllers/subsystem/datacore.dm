@@ -164,7 +164,7 @@ SUBSYSTEM_DEF(datacore)
 				"name" = name,
 				"rank" = rank,
 				"template_rank" = template_name,
-				"is_faction_leader" = (job.departments_bitflags & DEPARTMENT_BITFLAG_COMPANY_LEADER),
+				"is_faction_leader" = (job.departments_bitflags & DEPARTMENT_BITFLAG_COMMAND),
 				"is_captain" = istype(job, /datum/job/captain),
 				)
 
@@ -392,7 +392,7 @@ SUBSYSTEM_DEF(datacore)
 /datum/controller/subsystem/datacore/proc/can_modify_records(record_key, list/access)
 	switch(record_key)
 		if(DATACORE_RECORDS_STATION)
-			if((ACCESS_CAPTAIN in access) || (ACCESS_DELEGATE in access)) // HACK, need to split ACCESS_FACTION_LEADER away from a new ACCESS_MANAGEMENT
+			if((ACCESS_CAPTAIN in access) || (ACCESS_DELEGATE in access)) // HACK, need to split away from a new ACCESS_MANAGEMENT
 				return TRUE
 
 		if(DATACORE_RECORDS_AETHER, DATACORE_RECORDS_MEDICAL)

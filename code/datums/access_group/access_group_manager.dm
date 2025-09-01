@@ -18,7 +18,7 @@
 	access_groups = list(/datum/access_group/station/security)
 
 /datum/access_group_manager/medical
-	job_title = JOB_AUGUR
+	job_title = JOB_MEDICAL_DIRECTOR
 	access_groups = list(/datum/access_group/station/medical)
 
 /datum/access_group_manager/engineering

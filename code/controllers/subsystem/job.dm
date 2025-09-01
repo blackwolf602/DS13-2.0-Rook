@@ -931,7 +931,7 @@ SUBSYSTEM_DEF(job)
 	if(id_slot)
 		var/obj/item/card/id/id_card = id_slot.GetID(TRUE) || locate() in id_slot
 		if(id_card && !(ACCESS_HEADS in id_card.access))
-			id_card.add_access(ACCESS_FACTION_LEADER)
+			id_card.add_access(ACCESS_MANAGEMENT)
 
 	assigned_captain = TRUE
 
