@@ -336,7 +336,7 @@ GLOBAL_LIST_INIT(job_display_order, list(
 	uniform = /obj/item/clothing/under/color/grey
 	id = /obj/item/card/id/advanced
 	ears = /obj/item/radio/headset
-	back = /obj/item/storage/backpack
+	back = /obj/item/storage/backpack/satchel/rig
 	shoes = /obj/item/clothing/shoes/sneakers/black
 	box = /obj/item/storage/box/survival
 	belt = /obj/item/modular_computer/tablet/pda
