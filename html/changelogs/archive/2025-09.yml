@@ -1,0 +1,10 @@
+2025-09-02:
+  Francinum:
+  - rscadd: Embedded Controller Pin and ID Access programs
+  - code_imp: Static Pincode System
+  Kapu1178:
+  - rscadd: Created a framework for 'Embedded' Computer4 Machines.
+  - rscadd: Embedded Controllers take input from a keybad and are mostly used to control
+      simple equipment.
+  - refactor: This system will eventually obsolete legacy Embedded Controllers, such
+      as those used in the Toxins burn chamber, and Virology.
