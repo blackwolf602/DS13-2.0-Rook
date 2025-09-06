@@ -2689,8 +2689,8 @@
 /datum/supply_pack/misc/commandkeys
 	name = "Management Encryption Key Crate"
 	desc = "A pack of encryption keys that give access to the command radio network. Daedalus Industries reminds unauthorized employees not to eavesdrop in on secure communications channels, or at least to keep heckling of the command staff to a minimum."
-	access_view = ACCESS_HEADS
-	access = ACCESS_HEADS
+	access_view = ACCESS_MANAGEMENT
+	access = ACCESS_MANAGEMENT
 	cost = CARGO_CRATE_VALUE * 4
 	contains = list(/obj/item/encryptionkey/headset_com,
 					/obj/item/encryptionkey/headset_com,
