@@ -5,6 +5,7 @@
 		#include "map_files\debug\runtimestation.dmm"
 		#include "map_files\debug\multiz.dmm"
 		#include "map_files\AegisVII\AegisVII.dmm"
+		#include "map_files\Ishimura\Ishimura.dmm"
 		#ifdef CIBUILDING
 			#include "templates.dm"
 		#endif
