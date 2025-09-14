@@ -5,12 +5,12 @@
 	"map_path": "map_files/Ishimura",
 	"map_file": "Ishi.dmm",
 	"space_ruin_levels": 0,
-    "space_empty_levels": 0,
+	"space_empty_levels": 0,
 	"shuttles": {
-        "cargo": "cargo_aegis",
-        "emergency": "emergency_aegis1"
-    },
-    "traits": [
+		"cargo": "cargo_aegis",
+		"emergency": "emergency_aegis1"
+	},
+	"traits": [
 		{
 			"Up": 1,
 			"Linkage": "Cross"
@@ -26,10 +26,10 @@
 			"Baseturf": "/turf/open/space/openspace",
 			"Linkage": "Cross"
 		}
-    ],
-    "minetype": "none",
-    "blacklist_file": "lavaruinblacklist.txt",
-    "job_changes": {
+	],
+	"minetype": "none",
+	"blacklist_file": "lavaruinblacklist.txt",
+	"job_changes": {
 		"shaft_miner": {
 			"total_positions": 100
 		},
@@ -60,11 +60,15 @@
 		"atmospheric_technician": {
 			"total_positions": 2
 		},
-		"cook":{
-			"additional_cqc_areas": ["/area/station/service/bar", "/area/station/service/kitchen/coldroom", "/area/station/commons/lounge"]
+		"cook": {
+			"additional_cqc_areas": [
+				"/area/station/service/bar",
+				"/area/station/service/kitchen/coldroom",
+				"/area/station/commons/lounge"
+			]
 		},
-        "captain": {
-            "special_charter": "Aegis"
-        }
-    }
+		"captain": {
+			"special_charter": "USG Ishimura"
+		}
+	}
 }
