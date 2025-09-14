@@ -17,7 +17,6 @@
 #define ACCESS_TELEPORTER 17
 #define ACCESS_EVA 18
 /// Bridge, EVA storage windoors, gateway shutters, AI integrity restorer, comms console
-#define ACCESS_HEADS 19
 #define ACCESS_CAPTAIN 20
 #define ACCESS_ALL_PERSONAL_LOCKERS 21
 #define ACCESS_CHAPEL_OFFICE 22

@@ -5165,7 +5165,6 @@
 #include "deadspace\code\necromorph\abilities\ability.dm"
 #include "deadspace\code\necromorph\abilities\charge.dm"
 #include "deadspace\code\necromorph\abilities\charge_exploder.dm"
-#include "deadspace\code\necromorph\abilities\curl.dm"
 #include "deadspace\code\necromorph\abilities\dodge.dm"
 #include "deadspace\code\necromorph\abilities\explode.dm"
 #include "deadspace\code\necromorph\abilities\gallop.dm"
