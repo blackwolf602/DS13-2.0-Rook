@@ -6197,7 +6197,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "10"
 	},
-/obj/effect/mapping_helpers/access/all/command/hop,
+/obj/effect/mapping_helpers/access/all/command/hop/airlock,
 /turf/open/floor/deadspace/hardwood,
 /area/station/command/heads_quarters/hop)
 "dgc" = (
@@ -9685,7 +9685,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
-/obj/effect/mapping_helpers/access/all/command/hop,
+/obj/effect/mapping_helpers/access/all/command/hop/airlock,
 /turf/open/floor/deadspace/hardwood,
 /area/station/command/heads_quarters/hop)
 "ffE" = (
