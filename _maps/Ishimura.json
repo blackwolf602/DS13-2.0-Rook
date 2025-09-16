@@ -3,7 +3,7 @@
 	"version": 1,
 	"map_name": "USG Ishimura",
 	"map_path": "map_files/Ishimura",
-	"map_file": "Ishi.dmm",
+	"map_file": "Ishimura.dmm",
 	"space_ruin_levels": 0,
 	"space_empty_levels": 0,
 	"shuttles": {
