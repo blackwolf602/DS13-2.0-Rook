@@ -2,6 +2,9 @@
 	icon = 'deadspace/icons/turf/tram.dmi'
 	icon_state = "trammiddle"
 
+/obj/structure/industrial_lift/tram/ds/top
+	icon_state = "tramtop"
+
 /obj/structure/industrial_lift/tram/ds/corner
 	icon_state = "tramcorner"
 

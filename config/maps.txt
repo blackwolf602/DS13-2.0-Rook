@@ -19,6 +19,10 @@ map aegis
 	votable
 endmap
 
+map Ishimura
+	votable
+endmap
+
 map runtimestation
 endmap
 
