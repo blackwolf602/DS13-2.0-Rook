@@ -1,0 +1,25 @@
+"a" = (/obj/structure/shuttle/engine/heater{dir = 8},/obj/structure/window/reinforced{dir = 4},/turf/open/floor/plating,/area/space)
+"b" = (/obj/structure/chair/comfy/shuttle{name = "Shuttle FO seat"},/turf/open/floor/deadspace/mono,/area/space)
+"c" = (/obj/machinery/door/airlock/external{dir = 1; name = "CEC Executive Shuttle"},/obj/machinery/door/poddoor/shutters/preopen{id = "executive_evac"},/turf/open/floor/deadspace/mono,/area/space)
+"h" = (/obj/structure/chair/comfy/shuttle{name = "Shuttle CoP seat"; dir = 1},/turf/open/floor/deadspace/mono,/area/space)
+"j" = (/obj/machinery/computer/emergency_shuttle{dir = 8},/turf/open/floor/deadspace/mono,/area/space)
+"n" = (/obj/effect/turf_decal/bot_white,/turf/open/floor/deadspace/mono,/area/space)
+"s" = (/turf/open/floor/deadspace/mono,/area/space)
+"v" = (/obj/effect/spawner/structure/window/reinforced/shuttle,/obj/machinery/door/poddoor/shutters/preopen{id = "executive_evac"},/turf/open/floor/plating,/area/space)
+"A" = (/obj/structure/shuttle/engine/propulsion{dir = 8},/turf/open/floor/plating,/area/space)
+"D" = (/obj/structure/chair/comfy/shuttle{name = "Shuttle HoS seat"},/turf/open/floor/deadspace/mono,/area/space)
+"F" = (/obj/structure/table/reinforced,/obj/machinery/button/door/directional/south{id = "executive_evac"},/turf/open/floor/deadspace/mono,/area/space)
+"J" = (/obj/structure/table/reinforced,/turf/open/floor/deadspace/mono,/area/space)
+"O" = (/turf/closed/wall/mineral/titanium/overspace,/area/space)
+"Q" = (/obj/structure/chair/comfy/shuttle{dir = 4; name = "Shuttle Captain seat"},/turf/open/floor/deadspace/mono,/area/space)
+"R" = (/obj/machinery/door/airlock/command/glass{name = "Cockpit"},/turf/open/floor/deadspace/mono,/area/space)
+"X" = (/obj/structure/chair/comfy/shuttle{dir = 1; name = "Shuttle RD seat"},/turf/open/floor/deadspace/mono,/area/space)
+"Z" = (/obj/effect/spawner/structure/window/reinforced/shuttle,/obj/machinery/door/poddoor/shutters/preopen{id = "executive_evac"; dir = 4},/turf/open/floor/plating,/area/space)
+
+(1,1,1) = {"
+OOOccOOvOOO
+AanssODbsJZ
+AanssRssQjZ
+AanssOhXsFZ
+OOOccOOvOOO
+"}
